@@ -1,0 +1,137 @@
+   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap&subset=latin-ext');
+   
+   @font-face {
+        font-family: "Alisha"; /* A name you choose for your font */
+        src: url("../_fonts/Alisha.ttf") format("truetype"), /* Path to your TTF file */
+             url("../_fonts/Alisha.otf") format("opentype"); /* Path to your OTF file */
+        font-weight: normal; /* Optional: Define font weight (e.g., normal, bold, 400, 700) */
+        font-style: normal; /* Optional: Define font style (e.g., normal, italic) */
+        font-display: swap; /* Optional: Controls font loading behavior for performance */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+        background-color: #1f4615;
+        color: #ebe9ec;
+        font-family: 'Quicksand';
+    }
+    .navbar-brand {
+      white-space:unset;
+    }
+    h1.titre-principal {
+      line-height: 15px;
+      font-family: 'Quicksand';
+      word-wrap: normal;
+    }
+    h2 {
+      font-family: 'Alisha';
+      color: #ebe9ec;
+      font-size: 48px;
+    }
+    h3 {
+      font-size: large;
+      font-weight: bold;
+    }
+    a {
+      color: #cdd881;
+    }
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat; /* pour éviter la répétition */
+        background-position: center center; /* centrer l'image */
+        padding: 4rem 1rem;
+        text-align: center;
+        height: 950px;
+
+        position: relative;
+        overflow: hidden;        
+    }
+    .background-overlay::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(31,70,21, 0.4); /* overlay noir semi-transparent */
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2; /* au-dessus de l'overlay */
+    }
+    .lead {
+      font-family: 'Quicksand';
+    }
+    .hero .lead {
+      max-width: 800px;
+      margin: auto;
+    }
+    .footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .btn {
+      border-radius: 0;
+      padding: 15px;
+            font-family: 'Quicksand';
+    }
+    .btn-outline-light
+    {
+      color: #ebe9ec;
+      border-color: #ebe9ec;
+    }
+    .btn-outline-light:hover {
+      /* background-color: #1f4615; */
+      border-color: #ebe9ec;
+    }
+    .btn-outline-primary
+    {
+      color: #cdd881;
+      border-color: #cdd881;
+    }
+    .btn-outline-primary:hover {
+      background-color: #cdd881;
+      color: #1f4615;
+      border-color: #1f4615;
+    }
+    .btn-link {
+      color: #ffffff;
+    }    
+    .btn-link:hover {
+      color: #cdd881;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* noir à 40% d'opacité */
+      pointer-events: none; /* pour laisser passer les clics à travers l'overlay si nécessaire */
+    }
+
+    .logo-container {
+      display:flex;
+      align-items: center
+    }
+    .logo-petit {
+      height: 40px;
+      padding-right:15px;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            height: 650px;           
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero {
+            height: 750px;           
+        }
+
+
+    }
