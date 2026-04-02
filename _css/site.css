@@ -8,12 +8,18 @@
         font-style: normal; /* Optional: Define font style (e.g., normal, italic) */
         font-display: swap; /* Optional: Controls font loading behavior for performance */
     }
+/*
+    Couleurs
+    - Rose pâle: #C5A4A3
+    - Gris pâle: #B6BBB8  rgba(182,186,182)
+    - Gris vert: #818A82
+*/
     html {
       scroll-behavior: smooth;
     }
     body {
-        background-color: #1f4615;
-        color: #ebe9ec;
+        background-color: #eceeed;
+        color: #000000;
         font-family: 'Quicksand';
     }
     .navbar-brand {
@@ -24,9 +30,12 @@
       font-family: 'Quicksand';
       word-wrap: normal;
     }
+    .hero h2 {
+      color: #ffffff;
+    }
     h2 {
-      font-family: 'Alisha';
-      color: #ebe9ec;
+      font-family: 'Quicksand';
+      color: #C5A4A3;
       font-size: 48px;
     }
     h3 {
@@ -34,7 +43,7 @@
       font-weight: bold;
     }
     a {
-      color: #cdd881;
+      color: #C5A4A3;
     }
     .hero {
         background-size: cover;
@@ -43,7 +52,7 @@
         padding: 4rem 1rem;
         text-align: center;
         height: 950px;
-
+        color: #ffffff;
         position: relative;
         overflow: hidden;        
     }
@@ -54,7 +63,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(31,70,21, 0.4); /* overlay noir semi-transparent */
+      background-color: rgba(182,186,182, 0.4); /* overlay noir semi-transparent */
       z-index: 1;
     }
     .container {
@@ -76,32 +85,42 @@
     .btn {
       border-radius: 0;
       padding: 15px;
-            font-family: 'Quicksand';
+      font-family: 'Quicksand';
+    }
+    .hero .btn-outline-light
+    {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+    .hero .btn-outline-light:hover
+    {
+      color: #C5A4A3;
+      border-color: #C5A4A3;
+      background-color: transparent;
     }
     .btn-outline-light
     {
-      color: #ebe9ec;
-      border-color: #ebe9ec;
+      color: #C5A4A3;
+      border-color: #C5A4A3;
     }
     .btn-outline-light:hover {
-      /* background-color: #1f4615; */
-      border-color: #ebe9ec;
+      border-color: #C5A4A3;
     }
     .btn-outline-primary
     {
-      color: #cdd881;
-      border-color: #cdd881;
+      color: #C5A4A3;
+      border-color: #C5A4A3;
     }
     .btn-outline-primary:hover {
-      background-color: #cdd881;
-      color: #1f4615;
-      border-color: #1f4615;
+      background-color: #C5A4A3;
+      color: #818A82;
+      border-color: #818A82;
     }
     .btn-link {
-      color: #ffffff;
+      color: #C5A4A3;
     }    
     .btn-link:hover {
-      color: #cdd881;
+      color: #C5A4A3;
     }
     .overlay {
       position: absolute;
@@ -118,7 +137,7 @@
       align-items: center
     }
     .logo-petit {
-      height: 40px;
+      height: 50px;
       padding-right:15px;
     }
 
