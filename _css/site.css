@@ -1,13 +1,6 @@
    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap&subset=latin-ext');
-   
-   @font-face {
-        font-family: "Alisha"; /* A name you choose for your font */
-        src: url("../_fonts/Alisha.ttf") format("truetype"), /* Path to your TTF file */
-             url("../_fonts/Alisha.otf") format("opentype"); /* Path to your OTF file */
-        font-weight: normal; /* Optional: Define font weight (e.g., normal, bold, 400, 700) */
-        font-style: normal; /* Optional: Define font style (e.g., normal, italic) */
-        font-display: swap; /* Optional: Controls font loading behavior for performance */
-    }
+   @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+
 /*
     Couleurs
     - Rose pâle: #C5A4A3
@@ -20,7 +13,10 @@
     body {
         background-color: #eceeed;
         color: #000000;
-        font-family: 'Quicksand';
+        font-family: "Bentham", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
     }
     .navbar-brand {
       white-space:unset;
