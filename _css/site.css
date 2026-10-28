@@ -83,24 +83,16 @@
       padding: 15px;
       font-family: 'Quicksand';
     }
-    .hero .btn-outline-light
+    .btn-outline-light
     {
       color: #ffffff;
       border-color: #ffffff;
     }
-    .hero .btn-outline-light:hover
+    .btn-outline-light:hover
     {
       color: #C5A4A3;
       border-color: #C5A4A3;
       background-color: transparent;
-    }
-    .btn-outline-light
-    {
-      color: #C5A4A3;
-      border-color: #C5A4A3;
-    }
-    .btn-outline-light:hover {
-      border-color: #C5A4A3;
     }
     .btn-outline-primary
     {
